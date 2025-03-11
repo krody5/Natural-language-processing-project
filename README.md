@@ -31,13 +31,15 @@ Record a short video of your project to display here on your README. You can do 
 - Upload the thumbnail image to your repo.
 - Use the following markdown code:
 
-[![Thumbnail for my projet](Thumbnail.png)]((https://www.youtube.com/watch?v=FzoAAPN3teY))
+[![Thumbnail for my projet](Thumbnail.png)]((https://youtu.be/JQ67vThDCU0 ))
 
 ## Project Description
 
-Write a description of the goal and/or problem that your application. Include descriptions of what text is being analyzed, either if its text files you are using to interpret text an how the user interacts with your project.
+Our project's goal was to have the user receive the emotion and corresponding word they feel based on a number they input 1-10; 1 being most gloomy and 10 being extremely happy. This can help to interpret human emotions based on an easy scale they are given. We used a list of 10 emotions and a list of 10 words, with each word corresponding to each emotion being inputted. The user is asked the question,”How are you feeling (1-10)?” with an emotion next to each number, The user then inputs a number based on their current emotion, resulting in the output “You are feeling: EMOTION”. And “The corresponding word is: WORD”. Through ArrayLists, Strings, and an If else statement, we were able to match each emotion to a word and make sure the user gets an accurate response based on the number they input.
+
 
 ## NLP Techniques
 
-Write a description of what natural lanugage technique (NLP) you implemented in your project. State which methods in your project are associated with this, and a brief explanation of how those methods word and how they are necessary in the NLP technique.
+We implemented a synonym replacement NLP in order for our program to be able to ask a question to the user about the type of emotion they feel and returning a word synonymous to that emotion and displaying both. The methods in our project that are associated with this are the getUserInput and analyzeEmotion. The getUserInput method asks two questions. It first displays in the console log to select an emotion by its number and then gets the index of the emotions and displays all 10 from the list. The next question asks the user to input a number 1-10 of an emotion that correlates with how they feel, but if they choose a number not on the list it will return it is not a valid number in the list. When they input a number from the list, it will then call the analyzeEmotion method. This method will subtract the index by one because indexes start at 0 which makes it display the emotion they feel and then the word synonymous with that emotion and makes it all uppercase to highlight the choice the user makes. 
+
 
